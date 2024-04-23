@@ -6,17 +6,19 @@
     <link rel="stylesheet" href="style.css" />
     <title>Video 22</title>
     <style>
+      /* universal styles */
       * {
         margin: 0;
         padding: 0;
       }
+      /* examples of vh and vw */
       .vh-vw {
         height: 100vh;
         width: 100vw;
         border: 5px solid khaki;
       }
       .box {
-        border: 2px solid rebeccapurple;
+        border: 2px solid teal solid rebeccapurple;
         /* width: 234px; */
         /* width: 1366px; */
         height: 50vh;
@@ -25,7 +27,7 @@
         margin: auto;
       }
       .container {
-        border: 2px solid rgb(71, 51, 153);
+        border: 2px solid teal solid rgb(71, 51, 153);
         /* width: 234px; */
         /* width: 1366px; */
         width: 80vw;
@@ -34,6 +36,8 @@
         margin: 23px auto;
         height: 50vh;
       }
+
+      /* examples of rem and em */
       .box-1 {
         height: 40vh;
         width: 50vw;
@@ -57,9 +61,27 @@
       #from-root {
         font-size: 5rem;
       }
+
+      /* examples of vmin and vmax */
+      .v-minimum {
+        width: 80vmin;
+        height: 80vmin;
+        background-color: blueviolet;
+        font-size: 20px;
+        /* margin: 20px auto; */
+      }
+      .v-max {
+        height: 90vmin;
+        font-size: 30px;
+        border: 2px solid teal;
+        background-color: cadetblue;
+        width: 90vmax;
+      }
+
     </style>
   </head>
   <body>
+    <!-- examples of vh and vw-->
     <div class="vh-vw">
       <div class="box">
         this is the example of vh: view port height .........that means the
@@ -68,13 +90,17 @@
       <div class="container">
         this is the example of vw: view port weight .........that means the
         weight of the container will be 50 of its view port weight
+        and height is 100vmin
       </div>
     </div>
     <br /><br /><br />
-    <a
-      href="https://www.codecademy.com/resources/docs/css/inheritance"
+
+    <!-- know about Inherited properties in CSS -->
+    <a href="https://www.codecademy.com/resources/docs/css/inheritance"
       >Inherited properties in CSS</a
     >
+
+    <!--  examples of rem and em-->
 
     <div class="box-1">
       <p>Main text {default font size value of html text is = 16px}</p>
@@ -84,5 +110,13 @@
       <p>default value of html font size is = 16 px</p>
       <p id="from-root">inherited text from root html</p>
     </div>
+
+    <!--examples of v-min and v-max-->
+    <div class="v-minimum">
+      <p>this is v-imn properties . there is the value  of weight is 50 vmin
+        and height is 50vmin
+      </p>
+    </div>
+    <div class="v-max">this is v-max properties .there is the value of height is 100vmax and weight is 100vmax</div>
   </body>
 </html>
