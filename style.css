@@ -1,0 +1,26 @@
+      /* percentage value example */
+      .percentage{
+        border: 5px solid violet;
+        background-color: cadetblue;
+        height: 500px;
+        width: 500px;
+    }
+
+
+    .percentage> #div-1{
+        border: 3px solid green;
+        background-color: brown;
+        height:
+        45% ;
+        box-sizing: border-box;
+        cursor: pointer;
+        color: #d6d6d64e;
+    }
+    .percentage> #div-2{
+        border: 3px solid rgb(0, 79, 128);
+        box-sizing: border-box;
+        background-color: rgb(163, 42, 165);
+        height:
+        45% ;
+        color: rgb(250, 215, 243);
+    }
