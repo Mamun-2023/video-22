@@ -1,12 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Video 22</title>
-</head>
-<body>
-    
-</body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .vh-vw {
+        height: 100vh;
+        width: 100vw;
+        border: 5px solid khaki;
+      }
+      .box {
+        border: 2px solid rebeccapurple;
+        /* width: 234px; */
+        /* width: 1366px; */
+        height: 50vh;
+        background-color: chocolate;
+        box-sizing: border-box;
+        margin: auto;
+      }
+      .container {
+        border: 2px solid rgb(71, 51, 153);
+        /* width: 234px; */
+        /* width: 1366px; */
+        width: 80vw;
+        background-color: rgb(183, 30, 210);
+        box-sizing: border-box;
+        margin: 23px auto;
+        height: 50vh;
+      }
+      .box-1 {
+        height: 40vh;
+        width: 50vw;
+        border: 5px solid tan;
+        background-color: moccasin;
+        margin: 30px auto;
+        text-align: center;
+        font-size: 15px;
+      }
+      #inherited {
+        font-size: 5em;
+      }
+      .box-2 {
+        height: 50vh;
+        width: 50vw;
+        border: 5px solid rgb(180, 210, 140);
+        background-color: rgb(255, 181, 232);
+        margin: 30px auto;
+        text-align: center;
+      }
+      #from-root {
+        font-size: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="vh-vw">
+      <div class="box">
+        this is the example of vh: view port height .........that means the
+        height of the container will be 50 of its view port height
+      </div>
+      <div class="container">
+        this is the example of vw: view port weight .........that means the
+        weight of the container will be 50 of its view port weight
+      </div>
+    </div>
+    <br /><br /><br />
+    <a
+      href="https://www.codecademy.com/resources/docs/css/inheritance"
+      >Inherited properties in CSS</a
+    >
+
+    <div class="box-1">
+      <p>Main text {default font size value of html text is = 16px}</p>
+      <p id="inherited">inherited text from mother</p>
+    </div>
+    <div class="box-2">
+      <p>default value of html font size is = 16 px</p>
+      <p id="from-root">inherited text from root html</p>
+    </div>
+  </body>
 </html>
